@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:padding="10dp"
+                android:background="@color/white"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/imageview_list_view"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:background="@mipmap/bg_default_poi_list" />
+
+    <RelativeLayout
+        android:layout_toRightOf="@id/imageview_list_view"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp">
+
+        <RelativeLayout
+            android:id="@+id/rl_title_list_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/item_title"
+                android:textSize="14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="西点专家（横大华府店）" />
+            <ImageView
+                android:id="@+id/list_lable_groupon"
+                android:layout_toRightOf="@id/item_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:src="@mipmap/ic_global_list_lable_groupon" />
+            <ImageView
+                android:layout_toRightOf="@id/list_lable_groupon"
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_global_list_lable_pay_new" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rl_list_describe"
+            android:layout_below="@id/rl_title_list_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:id="@+id/ll_start"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/rate_star_medium_on"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/rate_star_medium_on"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/rate_star_medium_on"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/rate_star_medium_on"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/rate_star_medium_on"/>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/pingjia_num"
+                android:layout_toRightOf="@id/ll_start"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                android:text="5评价" />
+            <TextView
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                android:text="人均47元" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_below="@id/rl_list_describe"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/textview_list_current_price"
+                android:layout_marginRight="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                android:text="蛋糕甜点"/>
+            <TextView
+                android:layout_toRightOf="@id/textview_list_current_price"
+                android:id="@+id/textview_list_original_price"
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                android:text="高新区"/>
+            <TextView
+                android:id="@+id/textview_list_sold"
+                android:layout_alignParentRight="true"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:textSize="10sp"
+                android:text="10km"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

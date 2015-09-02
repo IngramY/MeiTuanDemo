@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:tools="http://schemas.android.com/tools"
+      android:background="@color/backgroundcolor"
+      android:orientation="vertical"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      tools:context="ruanyun.com.meituandemo.ui.AllClassActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_bar"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_height="50dp"
+        android:layout_width="match_parent" >
+
+        <ImageView
+            android:id="@+id/imageview_back"
+            android:src="@mipmap/cashier__ic_actionbar_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/text_title"
+            android:text="标题"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/imageview_back"
+            android:layout_toEndOf="@+id/imageview_back"/>
+
+        <ImageButton
+            android:id="@+id/imagebutton___search"
+            android:layout_alignParentRight="true"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:src="@mipmap/ic_action_search"
+            android:background="@color/white"
+            android:padding="10dp"
+            />
+
+        <ImageButton
+            android:layout_toLeftOf="@id/imagebutton___search"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:id="@+id/imageButton"
+            android:src="@mipmap/ic_action_map"
+            android:background="@color/white"
+            android:padding="10dp" />
+    </RelativeLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </ListView>
+</LinearLayout>

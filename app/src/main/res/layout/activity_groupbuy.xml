@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:background="@color/white"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <!-- 头部导航 -->
+
+    <LinearLayout
+        android:id="@+id/rl_goupbuy_top"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:background="@color/green"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        >
+
+        <LinearLayout
+            android:id="@+id/ll_goupbuy_city"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_groupbuy_city"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_gravity="center_vertical"
+                android:text="城市"
+                android:textColor="#FFFFFFFF"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/iv_groupbuy_city_arrow_icon"
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/ic_arrow_white_down" />
+        </LinearLayout>
+
+        <EditText
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:id="@+id/edittext_search"
+            android:layout_weight="1"
+            android:layout_margin="2dip"
+            android:layout_width="wrap_content"
+            android:layout_height="34dip"
+            android:hint="输入商家、分类或商圈"
+            android:textSize="12sp"
+            android:background="@drawable/bg_edittext"
+            android:drawableLeft="@mipmap/ic_global_search_textbox_white_normal" />
+        <!-- 头部右边 -->
+        <include layout="@layout/groupbuy_top_right" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/sv_groupbuy_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rl_goupbuy_top"
+        android:scrollbars="none" >
+
+        <!-- 可下拉刷新-->
+        <LinearLayout
+            android:id="@+id/ll_groupbuy_content"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!-- menu导航-->
+            <ruanyun.com.meituandemo.myview.MyViewPager
+                android:id="@+id/vPager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1.0"
+                android:background="#fff"
+                android:flipInterval="30"
+                android:persistentDrawingCache="animation" />
+
+            <!-- viewpager 指示器-->
+            <ruanyun.com.meituandemo.myview.CirclePageIndicator
+                android:id="@+id/indicator"
+                android:padding="10dip"
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                app:radius="4dp"
+                app:fillColor="#009933"
+                app:pageColor="#777"
+                app:strokeColor="#fff"
+                app:strokeWidth="2dp" />
+            <!--<include layout="@layout/groupbuy_menu" />-->
+            <!--分割线-->
+            <View
+                android:background="@color/backgroundcolor"
+                android:layout_width="match_parent"
+                android:layout_height="10dp">
+            </View>
+
+            <!-- 一元吃大餐-->
+            <include layout="@layout/groupbuy_yyyh" />
+
+            <!--分割线-->
+            <View
+                android:background="@color/backgroundcolor"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"/>
+
+            <!-- 名店抢购-->
+            <include layout="@layout/groupbuy_bargain" />
+
+            <!--分割线-->
+            <View
+                android:background="@color/backgroundcolor"
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <!-- 热门餐厅在线排队-->
+            <LinearLayout
+                android:id="@+id/linearlayout_groupbuy_hot_restaurant"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_marginLeft="10dp"
+                    android:background="@mipmap/ic_launcher"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <LinearLayout
+                    android:layout_marginLeft="10dip"
+                    android:orientation="vertical"
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="热门餐厅在线排队"
+                        android:textSize="20sp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:text="一大波火爆餐厅来袭，在线抢座不用等" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--分割线-->
+            <View
+                android:background="@color/backgroundcolor"
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <!-- 猜你喜欢 -->
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="猜你喜欢"
+                    android:textSize="16sp"/>
+                <View
+                    android:background="@color/backgroundcolor"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp" />
+
+                <ruanyun.com.meituandemo.myview.MyListView
+                    android:id="@+id/lv_like_shop"
+                    android:divider="@color/border_gray"
+                    android:dividerHeight="0.5dp"
+                    android:footerDividersEnabled="true"
+                    android:headerDividersEnabled="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </ruanyun.com.meituandemo.myview.MyListView>
+                <View
+                    android:background="@color/backgroundcolor"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp" />
+                <Button
+                    android:id="@+id/button_lookall"
+                    android:textColor="@color/green"
+                    android:text="查看全部团购"
+                    android:background="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp" />
+
+            </LinearLayout>
+
+            <!--分割线-->
+            <View
+                android:background="@color/backgroundcolor"
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <LinearLayout
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="20dp"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:text="愿意让我们更了解你吗"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_marginBottom="10dp"
+                    android:text="让美团的推荐更符合你的胃口"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <Button
+                    android:id="@+id/button_personal_div"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="20dp"
+                    android:text="我的美团DNA"
+                    android:background="@color/green"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

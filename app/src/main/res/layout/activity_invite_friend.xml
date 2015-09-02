@@ -1,0 +1,69 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context="ruanyun.com.meituandemo.ui.InviteFriendActivity">
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" >
+        <ImageView
+            android:id="@+id/imageview_back_invitefriend"
+            android:src="@mipmap/takeout_ic_actionbar_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="邀请好友使用美团"/>
+    </LinearLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableRow android:paddingTop="10dp">
+            <ImageView android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_weight="1" android:src="@mipmap/ic_base_share_weixin"/>
+            <ImageView android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_weight="1" android:src="@mipmap/ic_base_share_weixin_friends"/>
+            <ImageView android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_weight="1" android:src="@mipmap/ic_base_share_oauth"/>
+        </TableRow>
+        <TableRow android:paddingTop="10dp">
+            <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_weight="1" android:gravity="center_horizontal" android:text="微信好友"/>
+            <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_weight="1" android:gravity="center_horizontal" android:text="微信朋友圈"/>
+            <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_weight="1" android:gravity="center_horizontal" android:text="一键分享"/>
+        </TableRow>
+        <TableRow android:paddingTop="10dp">
+            <ImageView android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_weight="1" android:src="@mipmap/ic_base_share_qq"/>
+            <ImageView android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_weight="1" android:src="@mipmap/ic_base_share_sms"/>
+            <ImageView android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_weight="1" />
+        </TableRow>
+        <TableRow android:paddingTop="10dp">
+            <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_weight="1" android:gravity="center_horizontal" android:text="QQ"/>
+            <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_weight="1" android:gravity="center_horizontal" android:text="短信"/>
+            <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_weight="1" />
+        </TableRow>
+
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_marginTop="40dp"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="邀请好友扫描二维码使用美团"
+            />
+
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/share_qrcode"/>
+    </LinearLayout>
+
+</LinearLayout>

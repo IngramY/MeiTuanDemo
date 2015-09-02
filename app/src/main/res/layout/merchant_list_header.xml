@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+                android:padding="10dp"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/textview_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:background="@color/white"
+        android:drawableRight="@mipmap/ic_refresh"
+        android:textSize="14sp"
+        android:text="合肥市包河区南北一号高架马鞍山路出口" />
+
+</RelativeLayout>

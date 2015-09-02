@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/merchant_header"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:background="@color/green" >
+    <Button
+        android:id="@+id/button_allmerchant"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/green"
+        android:drawableBottom="@mipmap/bottom_divider"
+        android:text="@string/merchant_all"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/button_salemerchant"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@+id/button_allmerchant"
+        android:background="@color/green"
+        android:text="@string/merchant_sale"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+    <ImageButton
+        android:id="@+id/imagebutton_search"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/button_city"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:src="@mipmap/ic_action_search" />
+
+    <ImageButton
+        android:id="@+id/imagebutton_map"
+        android:layout_toLeftOf="@id/imagebutton_search"
+        android:background="@drawable/button_city"
+        android:src="@mipmap/ic_action_map"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"/>
+
+</RelativeLayout>
+    
+

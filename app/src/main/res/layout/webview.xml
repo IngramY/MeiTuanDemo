@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:orientation="horizontal"
+        >
+        <ImageButton
+            android:id="@+id/imagebutton_web_back"
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:src="@mipmap/ic_webview_bar_back_normal"
+            />
+        <TextView
+            android:layout_toRightOf="@id/imagebutton_web_back"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="标题" />
+        <ImageButton
+            android:id="@+id/imagebutton_share_web"
+            android:padding="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@mipmap/ic_action_share"
+            android:background="@color/white" />
+    </RelativeLayout>
+
+    <WebView
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+    </WebView>
+</LinearLayout>
