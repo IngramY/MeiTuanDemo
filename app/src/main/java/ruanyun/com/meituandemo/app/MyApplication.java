@@ -34,6 +34,9 @@ public class MyApplication extends Application {
         SDKInitializer.initialize(this);//百度地图初始化配置
 
     }
-
+/**
+ * description ycw  ce shihdflkas   本地分支
+ * author ycw
+ */
 
 }
