@@ -17,7 +17,7 @@
             android:layout_height="match_parent"
             android:background="@color/white"
             android:drawableLeft="@mipmap/takeout_ic_actionbar_back"
-            android:text="手机号快捷注册"
+            android:text="手机号快捷注册111"
             android:textColor="@color/black2"
             android:textSize="16sp" />
     </LinearLayout >
@@ -31,7 +31,7 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:background="@drawable/bg_edittext_login"
-        android:hint="请输入手机号"
+        android:hint="请输入手机号111"
         android:inputType="phone" />
 
     <EditText
@@ -39,7 +39,7 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:background="@drawable/bg_edittext_login"
-        android:hint="请输入短信验证码"
+        android:hint="请输入短信验证码111"
         android:inputType="textPassword" />
 
     <Button
