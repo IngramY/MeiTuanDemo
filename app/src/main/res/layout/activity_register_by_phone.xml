@@ -25,23 +25,25 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="20dp" />
+    <!--ycw  测试  ycwycwycwycwycwycw-->
 
     <EditText
         android:id="@+id/edittext_login_username"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:background="@drawable/bg_edittext_login"
-        android:hint="请输入手机号111"
+        android:hint="请输入手机号  ycw"
         android:inputType="phone" />
+    <!--ycw  测试  ycwycwycwycwycwycw-->
 
     <EditText
         android:id="@+id/edittext_login_password"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:background="@drawable/bg_edittext_login"
-        android:hint="请输入短信验证码111"
+        android:hint="请输入短信验证码    ycw"
         android:inputType="textPassword" />
-
+<!--ycw  测试  ycwycwycwycwycwycw-->
     <Button
         android:id="@+id/button_login"
         android:layout_width="match_parent"
@@ -50,7 +52,7 @@
         android:layout_marginRight="20dp"
         android:layout_marginTop="20dp"
         android:background="@color/green"
-        android:text="验证并登录"
+        android:text="验证并登录     ycw"
         android:textColor="@color/white"
         android:textSize="20sp" />
 
