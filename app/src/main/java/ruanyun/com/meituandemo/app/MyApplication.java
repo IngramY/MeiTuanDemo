@@ -35,11 +35,6 @@ public class MyApplication extends Application {
 
     }
 /**
- * description ycw  ce shihdflkas   本地分支
- * author ycw
- */
-
-/**
 *合法化的房间卡发简历到感觉符合国际法上大概   master 
 */
 
