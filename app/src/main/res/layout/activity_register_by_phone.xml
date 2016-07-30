@@ -41,9 +41,9 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:background="@drawable/bg_edittext_login"
-        android:hint="请输入短信验证码    ycw"
+        android:hint="请输入短信验证码111"
         android:inputType="textPassword" />
-<!--ycw  测试  ycwycwycwycwycwycw-->
+
     <Button
         android:id="@+id/button_login"
         android:layout_width="match_parent"
@@ -52,7 +52,7 @@
         android:layout_marginRight="20dp"
         android:layout_marginTop="20dp"
         android:background="@color/green"
-        android:text="验证并登录     ycw"
+        android:text="验证并登录"
         android:textColor="@color/white"
         android:textSize="20sp" />
 
