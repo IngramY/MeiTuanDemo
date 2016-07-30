@@ -39,4 +39,8 @@ public class MyApplication extends Application {
  * author ycw
  */
 
+/**
+*合法化的房间卡发简历到感觉符合国际法上大概   master 
+*/
+
 }
